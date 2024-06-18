@@ -98,7 +98,7 @@ libgambit = setuptools.Extension(
     extra_compile_args=(
         ["-std=c++17"] if platform.system() == "Darwin"
         else ["/std:c++17"] if platform.system() == "Windows"
-        else []
+        else ["-std=c++17"]
     )
 )
 
